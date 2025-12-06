@@ -2,25 +2,47 @@ import json
 import subprocess
 from pathlib import Path
 from datetime import datetime
+import shutil
+import argparse
 
 # Input root folder
 PLAYLIST_INPUT_DIR = Path("./playlists")
 
-# Output base folder
-OUTPUT_BASE_DIR = Path("./playlist_videos")
+# Flat output folder (NO SUBFOLDERS)
+OUTPUT_DIR = Path("./playlist_videos")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# Output indexes at project root
+# Global output indexes
 MASTER_LIST_FILE = Path("./master_list.json")
 TAGS_INDEX_FILE = Path("./tags_index.json")
 SCHEMA_FILE = Path("./schema.json")
 
-# GLOBAL accumulators
 MASTER_LIST = []
 TAGS_INDEX = {}
 
-# ---------------------------------------------
-# Utility: Load old version if exists
-# ---------------------------------------------
+# ---------------------------
+# Argument Parser for --purge
+# ---------------------------
+parser = argparse.ArgumentParser(description="Generate playlist metadata.")
+parser.add_argument("--purge", action="store_true",
+                    help="Purge all existing output before regeneration.")
+args = parser.parse_args()
+
+# ---------------------------
+# PURGE if flag is passed
+# ---------------------------
+if args.purge:
+    print("[PURGE MODE] Removing old playlist_videos contents...")
+    for item in OUTPUT_DIR.iterdir():
+        if item.is_file():
+            item.unlink()
+        elif item.is_dir():
+            shutil.rmtree(item)
+    print("[PURGE COMPLETE] Output directory is now empty.\n")
+else:
+    print("[NO PURGE] Keeping existing playlist files.\n")
+
+
 def load_existing_version(output_file):
     if output_file.exists():
         try:
@@ -31,9 +53,6 @@ def load_existing_version(output_file):
     return 0
 
 
-# ---------------------------------------------
-# YouTube extraction
-# ---------------------------------------------
 def fetch_youtube_flat_playlist(playlist_id):
     url = f"https://www.youtube.com/playlist?list={playlist_id}"
 
@@ -54,8 +73,8 @@ def fetch_youtube_flat_playlist(playlist_id):
 
 def process_youtube_playlist(entry, output_file):
     playlist_id = entry["playlist_id"]
-
     data = fetch_youtube_flat_playlist(playlist_id)
+
     if data is None:
         return None
 
@@ -81,17 +100,11 @@ def process_youtube_playlist(entry, output_file):
     }
 
 
-# ---------------------------------------------
-# Placeholder for future Internet Archive
-# ---------------------------------------------
 def process_archive_playlist(entry, output_file):
     print(f"[SKIPPED] Internet Archive not implemented: {entry['playlist_id']}")
     return None
 
 
-# ---------------------------------------------
-# MAIN SCRIPT
-# ---------------------------------------------
 def main():
     json_files = list(PLAYLIST_INPUT_DIR.rglob("*.json"))
     if not json_files:
@@ -104,23 +117,19 @@ def main():
         with open(json_file, "r") as f:
             entries = json.load(f)
 
-        relative_path = json_file.relative_to(PLAYLIST_INPUT_DIR).parent
-        input_filename = json_file.stem
-        output_dir = OUTPUT_BASE_DIR / relative_path / input_filename
-        output_dir.mkdir(parents=True, exist_ok=True)
-
         for entry in entries:
             playlist_id = entry["playlist_id"]
             provider = entry.get("provider", "youtube")
 
-            out_file = output_dir / f"{playlist_id}.json"
+            safe_provider = provider.replace(" ", "_").lower()
+            output_file = OUTPUT_DIR / f"{safe_provider}_{playlist_id}.json"
 
             print(f"  → Processing {provider}: {playlist_id}")
 
             if provider == "youtube":
-                final_json = process_youtube_playlist(entry, out_file)
+                final_json = process_youtube_playlist(entry, output_file)
             elif provider == "internet-archive":
-                final_json = process_archive_playlist(entry, out_file)
+                final_json = process_archive_playlist(entry, output_file)
             else:
                 print(f"  [SKIPPED] Unknown provider: {provider}")
                 continue
@@ -129,27 +138,22 @@ def main():
                 print(f"  [FAILED] {playlist_id}")
                 continue
 
-            with open(out_file, "w") as f:
+            with open(output_file, "w") as f:
                 json.dump(final_json, f, indent=2)
 
-            print(f"     ✔ Saved v{final_json['version']} → {out_file}")
+            print(f"     ✔ Saved v{final_json['version']} → {output_file}")
 
-            # Accumulate into MASTER LIST
             MASTER_LIST.append({
                 "playlist_id": final_json["playlist_id"],
                 "provider": final_json["provider"],
                 "title": final_json["title"],
-                "subtype": final_json["subtype"],
+                "subtype": final_json["subtype"]
             })
 
-            # Build TAG INDEX
             for tag in final_json["tags"]:
                 TAGS_INDEX.setdefault(tag.lower(), []).append(final_json["playlist_id"])
 
 
-    # ---------------------------------------------
-    # SAVE MASTER LIST + TAG INDEX + SCHEMA
-    # ---------------------------------------------
     print("\n[WRITING GLOBAL INDEX FILES]")
 
     with open(MASTER_LIST_FILE, "w") as f:
