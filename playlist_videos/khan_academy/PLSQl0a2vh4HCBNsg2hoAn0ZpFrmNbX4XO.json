@@ -1,0 +1,44 @@
+{
+  "playlist_id": "PLSQl0a2vh4HCBNsg2hoAn0ZpFrmNbX4XO",
+  "provider": "youtube",
+  "version": 1,
+  "last_updated": "2025-12-07",
+  "title": "Nuclear physics | Physics | Khan Academy",
+  "subtype": [
+    "physics",
+    "nuclear"
+  ],
+  "tags": [
+    "khanacademy"
+  ],
+  "videos": [
+    {
+      "video_id": "P_SD5Rt6XMk",
+      "title": "Intro to radioactive decay | Physics | Khan Academy"
+    },
+    {
+      "video_id": "QCZQCi_uKpM",
+      "title": "Alpha decay | Physics | Khan Academy"
+    },
+    {
+      "video_id": "iGr6atucsBw",
+      "title": "Beta decay | Physics | Khan Academy"
+    },
+    {
+      "video_id": "ksLNmLQbNT4",
+      "title": "Gamma decay | Physics | Khan Academy"
+    },
+    {
+      "video_id": "gDpyBifg6-s",
+      "title": "Half-life | Physics | Khan Academy"
+    },
+    {
+      "video_id": "b9qxAFLpz9U",
+      "title": "Nuclear fusion | Physics | Khan Academy"
+    },
+    {
+      "video_id": "5jDFqpoTgDo",
+      "title": "Nuclear fission | Physics | Khan Academy"
+    }
+  ]
+}

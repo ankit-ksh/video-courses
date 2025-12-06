@@ -1,0 +1,24 @@
+[
+  {
+    "playlist_name": "Intro to Computer Science - Python ",
+    "playlist_id": "PLSQl0a2vh4HDkbhG0sDW0b-VZXykEIAe5",
+    "provider": "youtube",
+    "subtype": ["python", "programming"],
+    "tags": ["khanacademy", "python", "programming"]
+  },
+  {
+    "playlist_name": "Electromagnetic radiation",
+    "playlist_id": "PLSQl0a2vh4HD2AZcy7Pe8mHAiO5UG2WKt",
+    "provider": "youtube",
+    "subtype": ["physics", "radiation"],
+    "tags": ["khanacademy"]
+  },
+  {
+    "playlist_name": "Nuclear physics",
+    "playlist_id": "PLSQl0a2vh4HCBNsg2hoAn0ZpFrmNbX4XO",
+    "provider": "youtube",
+    "subtype": ["physics", "nuclear"],
+    "tags": ["khanacademy"]
+  }
+]
+

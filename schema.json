@@ -1,0 +1,22 @@
+{
+  "playlist_id": "string",
+  "provider": [
+    "youtube",
+    "internet-archive"
+  ],
+  "version": "number",
+  "last_updated": "string",
+  "title": "string",
+  "subtype": [
+    "string"
+  ],
+  "tags": [
+    "string"
+  ],
+  "videos": [
+    {
+      "video_id": "string",
+      "title": "string"
+    }
+  ]
+}

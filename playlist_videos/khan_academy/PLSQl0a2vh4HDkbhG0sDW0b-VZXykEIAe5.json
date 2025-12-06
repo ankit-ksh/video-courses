@@ -1,0 +1,266 @@
+{
+  "playlist_id": "PLSQl0a2vh4HDkbhG0sDW0b-VZXykEIAe5",
+  "provider": "youtube",
+  "version": 3,
+  "last_updated": "2025-12-07",
+  "title": "Intro to Computer Science - Python | Khan Academy",
+  "subtype": [
+    "python",
+    "programming"
+  ],
+  "tags": [
+    "khanacademy",
+    "python",
+    "programming"
+  ],
+  "videos": [
+    {
+      "video_id": "zzjNg-jNflY",
+      "title": "Welcome to Intro to Computer Science - Python! | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "5LeZflr8Zfs",
+      "title": "What is computer science? | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "lkQT8zb0_A8",
+      "title": "Print statements and expressions | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "N-oyB_UYZ74",
+      "title": "Tracing program execution | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "WUoCSkSW4cs",
+      "title": "Debugging with stack traces | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "52RHZdBSjTw",
+      "title": "Variables and assignment | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "HW__or3B9pw",
+      "title": "Tracing variables | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "SOLnbKI73Wo",
+      "title": "User input | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "mfrDtmzmRk4",
+      "title": "Program design: catering contract | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "y-FlANhhNiA",
+      "title": "Type casting | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "7Gc4wAQZcfA",
+      "title": "Tracing arithmetic expressions | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "POJgvVGmgBk",
+      "title": "Project preview: Profile page | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "rJCRGiEidZ4",
+      "title": "Algorithms and selection | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "7o1wX-jEnP8",
+      "title": "if statements | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "M_VZsGHfpvw",
+      "title": "Program design: bus fares | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "p7pJMvD2sag",
+      "title": "Evaluating compound boolean expressions | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "NMG8sR_1YTI",
+      "title": "Program design: content moderation | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "q0bQrGhdPm4",
+      "title": "if-elif-else | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "m5WRTjjmJzE",
+      "title": "Program design: weights on Mars | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "276Djs2h18Y",
+      "title": "Nested conditionals | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "xYAdMDT2IyE",
+      "title": "Algorithmic bias | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "mB7FDuTOr4k",
+      "title": "Project preview: Recommendation engine | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "AuGIuoK7bW0",
+      "title": "Simulations and repetition | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "BfJxKKGl8lg",
+      "title": "Importing modules | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "jG4WLAit7Lo",
+      "title": "Program design: robot simulation | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "KsiWTrZQFXg",
+      "title": "while loops | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "FadvtbvAoWk",
+      "title": "Tracing loop execution | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "QpLf-0MfAgc",
+      "title": "for loops with range() | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "ee6w_0ZJA3g",
+      "title": "Program design: beehive simulation | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "Xnzjr0Pcx-A",
+      "title": "break and continue | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "jNH3R1MdXLc",
+      "title": "Project preview: Natural selection | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "SjzoN-RuK5I",
+      "title": "Games and modularity | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "UmNKiV7Lekk",
+      "title": "Functions | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "kflJd26x_u8",
+      "title": "Tracing function calls | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "AC0Ql1mOw4s",
+      "title": "Local and global scope | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "H1oqBxBWRQ4",
+      "title": "Nested function calls | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "OxZJNHxTGeo",
+      "title": "Program design: deck of cards | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "wwe6c-wIE10",
+      "title": "Creating modules | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "oWSs4TKs0hg",
+      "title": "Program design: Nim game | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "3OmfTIf-SOU",
+      "title": "Unit testing | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "eNmRjbVIZ0s",
+      "title": "Debugging with test cases | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "Py2mZQbINyE",
+      "title": "Project preview: Timed typer | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "v1C4FutndXg",
+      "title": "Scripts and sequences | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "IaEcrHxjoCM",
+      "title": "Lists | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "m9pvxuHb5y8",
+      "title": "Tracing lists | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "jNjRP0tVY5s",
+      "title": "List iteration | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "_MsHKS96o3k",
+      "title": "Program design: screen time | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "JJ5Cq6I9lbs",
+      "title": "String methods | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "Ifw30qzDj3M",
+      "title": "Pass by assignment | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "4hMeMtgF81o",
+      "title": "Program design: flight delays | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "5A6mq84yqpc",
+      "title": "Project preview: Ciphers | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "WZQRJjeG6lo",
+      "title": "Datasets and data structures | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "nf26Yv5JTOc",
+      "title": "Dictionaries | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "SOmCvHKmfYI",
+      "title": "Dictionary hashing | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "P1uiY7_8MOU",
+      "title": "Dictionary iteration | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "TkRfRsmCquw",
+      "title": "Program design: bakery inventory | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "6vE6sdvPgmE",
+      "title": "Data modeling and APIs | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "ygDNNF1LEhI",
+      "title": "Accessing nested data | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "ke79Rj7V6sY",
+      "title": "2D lists | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "M7vYtN7SZSE",
+      "title": "Program design: emergency response | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "OhpEUd1Om5k",
+      "title": "Project preview: Book synopsis | Intro to CS - Python | Khan Academy"
+    },
+    {
+      "video_id": "pGoGreVjzVM",
+      "title": "Course tour for teachers | Intro to CS - Python | Khan Academy"
+    }
+  ]
+}
