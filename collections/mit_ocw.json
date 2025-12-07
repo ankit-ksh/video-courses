@@ -1,0 +1,36 @@
+[
+  {
+    "title": "MIT OCW – Single Variable Calculus",
+    "collection_id": "PL590CCC2BC5AF3BC1",
+    "provider": "youtube",
+    "source": "mit_ocw",
+    "domains": ["mathematics"],
+    "topics": ["calculus"],
+    "languages": ["en"],
+    "instructors": ["MIT OCW"],
+    "tags": ["mit", "ocw", "calculus"]
+  },
+  {
+    "title": "MIT OCW – Linear Algebra (Gilbert Strang)",
+    "collection_id": "PLE7DDD91010BC51F8",
+    "provider": "youtube",
+    "source": "mit_ocw",
+    "domains": ["mathematics"],
+    "topics": ["linear_algebra", "strang"],
+    "languages": ["en"],
+    "instructors": ["Gilbert Strang", "MIT OCW"],
+    "tags": ["mit", "ocw", "linear_algebra", "strang"]
+  },
+  {
+    "title": "MIT 18.156 Projection Theory, Spring 2025",
+    "collection_id": "PLUl4u3cNGP62K9_7Pg26ytrAOXwXFpN43",
+    "provider": "youtube",
+    "source": "mit_ocw",
+    "domains": ["mathematics", "physics"],
+    "topics": ["projection"],
+    "languages": ["en"],
+    "instructors": ["MIT Mathematics Department"],
+    "tags": ["mit", "ocw", "projection", "mathematics", "physics"]
+  }
+]
+

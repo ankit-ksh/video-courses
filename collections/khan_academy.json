@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Intro to Computer Science - Python",
+    "collection_id": "PLSQl0a2vh4HDkbhG0sDW0b-VZXykEIAe5",
+    "provider": "youtube",
+    "source": "khan_academy",
+    "domains": ["computer_science", "programming"],
+    "topics": ["python", "programming"],
+    "languages": ["en"],
+    "instructors": ["Khan Academy Team"],
+    "tags": ["khanacademy", "python", "programming"]
+  },
+  {
+    "title": "Electromagnetic Radiation",
+    "collection_id": "PLSQl0a2vh4HD2AZcy7Pe8mHAiO5UG2WKt",
+    "provider": "youtube",
+    "source": "khan_academy",
+    "domains": ["physics"],
+    "topics": ["radiation"],
+    "languages": ["en"],
+    "instructors": ["Khan Academy Team"],
+    "tags": ["khanacademy", "radiation", "physics"]
+  },
+  {
+    "title": "Nuclear Physics",
+    "collection_id": "PLSQl0a2vh4HCBNsg2hoAn0ZpFrmNbX4XO",
+    "provider": "youtube",
+    "source": "khan_academy",
+    "domains": ["physics"],
+    "topics": ["nuclear"],
+    "languages": ["en"],
+    "instructors": ["Khan Academy Team"],
+    "tags": ["khanacademy", "nuclear", "physics"]
+  }
+]
+
